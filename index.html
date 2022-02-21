@@ -20,7 +20,7 @@
 
     </label>
 
-    <nav class="menu">
+    <nav class="sidebar">
         
         <ul>
             <a href="#"><li>_hello</li></a>
@@ -32,11 +32,11 @@
 
     <header>
 
-        <nav class="menu-top">
+        <nav class="menu">
             <ul>
-                <a href="#"><li>_hello</li></a>
-                <a href="#"><li>_projects</li></a>
-                <a href="#"><li>_contact</li></a>
+                <a href="index.html"><li class="list active">_hello</li></a>
+                <a href="#"><li class="list">_projects</li></a>
+                <a href="#"><li class="list">_contact</li></a>
             </ul>
         </nav>
         
@@ -55,6 +55,22 @@
         <p>developed by <a href="https://jefferson-ferraz.github.io" target="blank">jeffersON-ferraz</a></p>
         
     </footer>
+
+
+    <script>
+
+        const list = document.querySelectorAll('.list');
+
+        function activeLink(){
+
+            list.forEach((item) => item.classList.remove('active'));
+            this.classList.add('active');
+
+        }
+        
+        list.forEach((item) => item.addEventListener('click', activeLink));
+
+    </script>
 
 </body>
 
