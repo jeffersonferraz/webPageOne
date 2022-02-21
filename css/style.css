@@ -11,6 +11,60 @@ body {
     font-family: 'Source Code Pro', monospace;
 }
 
+#check {
+    display: none;
+}
+
+#check:checked ~ .menu {
+    left: 0;
+}
+
+#check:checked ~ label #btn {
+    left: 284px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+    left: 284px;
+    opacity: 1;
+    pointer-events: all;
+    
+}
+
+label #btn,
+label #cancel {
+    position: absolute;
+    font-size: 30px;
+    cursor: pointer;
+    background: #2b2b2b;
+    color: white;
+    border-radius: 40px;
+}
+
+label #btn {
+    left: 15px;
+    top: 15px;
+    padding: 5px 14px 5px 16px;
+    transition: all 0.5s;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: 15px;
+    top: 15px;
+    padding: 4px 17px 6px 13px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+.menu {
+    position: absolute;
+    left: -280px;
+    transition: all 0.5s ease;
+}
+
 .menu ul {
     list-style: none;
 }
@@ -20,9 +74,9 @@ body {
     height: 35px;
     display: flex;
     align-items: center;
-    margin: 1.5em;
-    padding: 1em;
-    background: rgb(43, 43, 43);
+    margin: 25px;
+    padding: 15px;
+    background: #2b2b2b;
     position: relative;
     color: white;
     
@@ -66,5 +120,5 @@ body {
     text-decoration: none;
     /*text-transform: uppercase;*/
     font-size: 1.3em;
-    font-weight: 400;
+    font-weight: 400;   
 }
