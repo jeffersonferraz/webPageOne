@@ -327,6 +327,12 @@ form button:focus {
 }
 /* --------------------- contact-page end */
 
+/* --------------------- thanks-page begin */
+#thanks {
+    font-size: 1.2em;
+}
+/* --------------------- thanks-page end */
+
 
 
 footer {
