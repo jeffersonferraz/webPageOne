@@ -213,6 +213,7 @@ main {
 
 main .about-me {
     width: 70%;
+    font-size: 1em;
     color: darkgray;
     background: #161c28;
     margin: 80px auto 0px auto;
@@ -226,6 +227,7 @@ main .about-me {
 /* --------------------- projects-page begin */
 .description {
     width: 80%;
+    font-size: 1em;
     background: #161c28;
     color: darkgray;
     margin: 80px auto 0px auto;
@@ -305,6 +307,7 @@ form textarea:focus {
 
 form button {
     font-family: 'Source Code Pro', monospace;
+    text-transform: uppercase;
     background: #1e2636;
     color: lightskyblue;
     border: none;
@@ -318,8 +321,9 @@ form button {
 form button:hover,
 form button:focus {
     outline: none;
-    background: #252f42;
+    background: #1c2433;
     color: peru;
+    transition: 0.5s;
 }
 /* --------------------- contact-page end */
 
