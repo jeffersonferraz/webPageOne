@@ -76,6 +76,24 @@
 
     </script>
 
+
+    <script>
+        // When the user scrolls down 40px from the top of the document, appear the sidebar button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+            document.getElementById("btn").style.opacity = "1";
+            document.getElementById("btn").style.pointerEvents = "all";
+          } else {
+            document.getElementById("btn").style.opacity = "0";
+            document.getElementById("btn").style.pointerEvents = "none";
+          }
+        }
+        </script>
+
+
+
 </body>
 
 </html>
