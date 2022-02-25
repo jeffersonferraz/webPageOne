@@ -161,8 +161,9 @@ header sup {
     background: #2b2b2b;
     color: lightskyblue;
     border-top: 3px solid transparent;
-    border-right: 1px solid #353535;
-    border-left: 1px solid #353535;
+    border-right: 0.5px solid #161616;
+    border-left: 0.5px solid #353535;
+    
     padding: 10px 0px 15px 30px;
     margin-left: 0px;
     font-size: 1.1em;
@@ -173,11 +174,13 @@ header sup {
 }
 
 .menu li:hover {
-    background: #0a0d12;
+    background: #131922;
     color: peru;
     border-top: 3px solid indianred;
-    border-right: 1px solid #0a0d12;
-    border-left: 1px solid #0a0d12;
+    border-right: 1px solid #131922;
+    border-left: 1px solid #131922;
+    
+
 }
 
 .menu li:nth-child(1).active {
@@ -186,6 +189,7 @@ header sup {
     border-top: 3px solid indianred;
     border-right: 1px solid #0a0d12;
     border-left: 1px solid #0a0d12;
+    
 }
 
 
