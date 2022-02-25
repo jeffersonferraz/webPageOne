@@ -8,11 +8,24 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    background: #1e2636;
+    border: 1px solid #243747;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0a0d12;
+}
+
 body {
     font-family: 'Source Code Pro', monospace;
     background: gray;
 }
 
+
+
+/* --------------------- sidebar begin */
 #check {
     display: none;
 }
@@ -56,7 +69,6 @@ label #btn {
     left: 15px;
     top: 65px;
     padding: 5px 14px 5px 16px;
-    
 }
 
 label #cancel {
@@ -66,7 +78,6 @@ label #cancel {
     padding: 4px 17px 6px 13px;
     opacity: 0;
     pointer-events: none;
-    
 }
 
 .sidebar {
@@ -97,7 +108,7 @@ label #cancel {
     transition: all 0.5s;
 }
 
-.sidebar li:hover{
+.sidebar li:hover {
     background: #0a0d12;
     color: peru;
     border-left: 3px solid indianred;
@@ -110,6 +121,9 @@ label #cancel {
     font-size: 1.1em;
     font-weight: 400;   
 }
+/* --------------------- sidebar end */
+
+
 
 header {
     max-width: 960px;
@@ -147,30 +161,24 @@ header sup {
 
 
 
-
+/* --------------------- menu begin */
 .menu ul {
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
     list-style: none;
     background: #181818;
-    
 }
 
 .menu li {
-    
     background: #2b2b2b;
     color: lightskyblue;
     border-top: 3px solid transparent;
     border-right: 0.5px solid #161616;
     border-left: 0.5px solid #353535;
-    
     padding: 10px 0px 15px 30px;
     margin-left: 0px;
     font-size: 1.1em;
     text-align: left;
-    
-    
-    
 }
 
 .menu li:hover {
@@ -179,8 +187,6 @@ header sup {
     border-top: 3px solid indianred;
     border-right: 1px solid #131922;
     border-left: 1px solid #131922;
-    
-
 }
 
 .menu li:nth-child(1).active {
@@ -189,30 +195,19 @@ header sup {
     border-top: 3px solid indianred;
     border-right: 1px solid #0a0d12;
     border-left: 1px solid #0a0d12;
-    
 }
-
 
 .menu a {
     text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
-
+/* --------------------- menu end */
 
 
 
 main {
     max-width: 960px;
     margin: auto;
-    padding: 120px 0px 120px 0px;
+    padding: 40px 0px 120px 0px;
     background: #0D1117;
 }
 
@@ -220,22 +215,22 @@ main .about-me {
     width: 70%;
     color: darkgray;
     background: #161c28;
-    margin: auto;
+    margin: 80px auto 0px auto;
     padding: 50px 20px;
-    box-shadow: 0px 0px 10px rgb(0 0 0 / 80%) inset;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8) inset;
     border: 3px solid #131923;
 }
 
 
 
-
+/* --------------------- projects-page begin */
 .description {
     width: 80%;
     background: #161c28;
     color: darkgray;
-    margin: 0px auto 0px auto;
+    margin: 80px auto 0px auto;
     padding: 50px 20px;
-    box-shadow: 0px 0px 10px rgb(0 0 0 / 80%) inset;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8) inset;
     border: 3px solid #131923;
 }
 
@@ -252,26 +247,81 @@ main .about-me {
     border: 0px solid #0D1117;
 }
 
-.img-scroll img {
-    filter: grayscale(100%) opacity(50%);
-    
-    width: 100%;
+.img-scroll::-webkit-scrollbar {
+    border: none;
+    background: #1e2636;
 }
 
+.img-scroll img {
+    filter: grayscale(100%) opacity(50%);
+    width: 100%;
+}
+/* --------------------- projects-page end */
 
 
+/* --------------------- contact-page begin */
+form {
+    font-size: 1.1em;
+    margin: auto;
+    width: 85%;
+}
 
+form label,
+form input,
+form textarea {
+    margin: auto;
+    display: block;
+    width: 90%;
+}
 
+form label {
+    line-height: 1;
+    margin-bottom: 10px;
+}
 
+form input,
+form textarea {
+    background: #1e2636;
+    font: inherit;
+    color: darkgray;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid transparent;
+}
 
+textarea {
+    min-height: 200px;
+    resize: vertical;
+}
 
+form input:hover,
+form input:focus,
+form textarea:hover,
+form textarea:focus {
+    outline: none;
+    background: #252f42;
+    transition: 0.5s;
+}
 
+form button {
+    font-family: 'Source Code Pro', monospace;
+    background: #1e2636;
+    color: lightskyblue;
+    border: none;
+    margin: 20px auto 10px;
+    display: block;
+    padding: 15px 100px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
 
-
-
-
-
-
+form button:hover,
+form button:focus {
+    outline: none;
+    background: #252f42;
+    color: peru;
+}
+/* --------------------- contact-page end */
 
 
 
