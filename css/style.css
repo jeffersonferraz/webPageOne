@@ -229,7 +229,34 @@ main .about-me {
 
 
 
+.description {
+    width: 80%;
+    background: #161c28;
+    color: darkgray;
+    margin: 0px auto 0px auto;
+    padding: 50px 20px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 80%) inset;
+    border: 3px solid #131923;
+}
 
+.description a {
+    text-decoration: none;
+    color: lightskyblue;
+}
+
+.img-scroll {
+    width: 90%;
+    height: 240px;
+    overflow: auto;
+    margin: 40px auto 0px auto;
+    border: 0px solid #0D1117;
+}
+
+.img-scroll img {
+    filter: grayscale(100%) opacity(50%);
+    
+    width: 100%;
+}
 
 
 
