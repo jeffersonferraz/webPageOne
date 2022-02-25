@@ -104,44 +104,6 @@ label #cancel {
     border-bottom: 1px solid #0a0d12;
 }
 
-
-/*
-.sidebar li::before,
-.sidebar li::after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    border-radius: 5px;
-    width: 105%;
-    transition: all 0.4s;
-}
-
-.sidebar li::before {
-    left: 0%;
-    height: 130%;
-    background: linear-gradient(to right, yellow, mediumspringgreen);
-}
-
-.sidebar li::after {
-    left: -10%;
-    height: 120%;
-    background: #ffffff56;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.17);
-}
-
-.sidebar li:hover::before {
-    transform: translateX(-2.5%);
-    color: peru;
-}
-
-.sidebar li:hover::after {
-    transform: translateX(15%);
-    color: peru;
-}
-*/
-
-
 .sidebar a {
     text-decoration: none;
     font-size: 1.1em;
@@ -156,7 +118,7 @@ header {
 }
 
 header p {
-    color: darkgrey;
+    color: darkgray;
     font-size: 1.6em;
     font-weight: 400;
     text-indent: 200px;
@@ -179,7 +141,7 @@ header h3 {
 }
 
 header sup {
-    color: darkgrey;
+    color: darkgray;
 }
 
 
@@ -245,10 +207,20 @@ header sup {
 main {
     max-width: 960px;
     margin: auto;
-    height: 1000px;
+    padding: 100px 0px 100px 0px;
     background: #0D1117;
 }
 
+main .about-me {
+    width: 70%;
+    color: darkgray;
+    background: #161c28;
+    
+    margin: auto;
+    padding: 50px 20px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 80%) inset;
+    border: 3px solid #131923;
+}
 
 
 
