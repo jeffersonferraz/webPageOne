@@ -21,11 +21,17 @@
     </label>
 
     <nav class="sidebar">
-        
+
         <ul>
-            <a href="index.html"><li>_hello</li></a>
-            <a href="projects.html"><li>_projects</li></a>
-            <a href="contact.html"><li>_contact</li></a>
+            <a href="index.html">
+                <li>_hello</li>
+            </a>
+            <a href="projects.html">
+                <li>_projects</li>
+            </a>
+            <a href="contact.html">
+                <li>_contact</li>
+            </a>
         </ul>
 
     </nav>
@@ -34,16 +40,21 @@
 
         <nav class="menu">
             <ul>
-                <a href="index.html"><li class="list">_hello</li></a>
-                <a href="projects.html"><li class="list">_projects</li></a>
-                <a href="contact.html"><li class="list active">_contact</li></a>
+                <a href="index.html">
+                    <li class="list">_hello</li>
+                </a>
+                <a href="projects.html">
+                    <li class="list">_projects</li>
+                </a>
+                <a href="contact.html">
+                    <li class="list active">_contact</li>
+                </a>
             </ul>
         </nav>
-        
+
         <p>;)</p>
         <h1>Contact</h1>
         <h3><sub>jefferson.ferraz@live.com</sub></h3>
-        
 
     </header>
 
@@ -65,9 +76,9 @@
                 <input type="hidden" name="_captcha" value="false">
 
                 <input type="hidden" name="_next" value="https://jeffersonferraz.github.io/portfolio/thanks.html">
-                
+
                 <button type="submit">Send</button>
-           
+
             </form>
 
         </section>
@@ -75,17 +86,19 @@
     </main>
 
     <footer>
-        
-        <p>developed by <a href="https://github.com/jeffersonferraz" target="blank">JeffersonFerraz</a> <sup>[GitHub profile]</sup></p>
-        
-    </footer>
 
+        <p>developed by <a href="https://github.com/jeffersonferraz" target="blank">JeffersonFerraz</a> <sup>[GitHub
+                profile]</sup></p>
+
+    </footer>
 
     <script>
 
+        // show at the navigation menu the button with active link
+        
         const list = document.querySelectorAll('.list');
 
-        function activeLink(){
+        function activeLink() {
 
             list.forEach((item) => item.classList.remove('active'));
             this.classList.add('active');
@@ -94,25 +107,28 @@
 
         list.forEach((item) => item.addEventListener('click', activeLink));
 
-    </script>
 
-
-    <script>
+        // Activation of sidebar button by scrolling 
         // When the user scrolls down 40px from the top of the document, appear the sidebar button
-        window.onscroll = function() {scrollFunction()};
-        
+
+        window.onscroll = function () { scrollFunction() };
+
         function scrollFunction() {
-          if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-            document.getElementById("btn").style.opacity = "1";
-            document.getElementById("btn").style.pointerEvents = "all";
-          } else {
-            document.getElementById("btn").style.opacity = "0";
-            document.getElementById("btn").style.pointerEvents = "none";
-          }
+
+            if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+
+                document.getElementById("btn").style.opacity = "1";
+                document.getElementById("btn").style.pointerEvents = "all";
+
+            } else {
+
+                document.getElementById("btn").style.opacity = "0";
+                document.getElementById("btn").style.pointerEvents = "none";
+
+            }
         }
-        </script>
 
-
+    </script>
 
 </body>
 
