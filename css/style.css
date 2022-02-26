@@ -35,13 +35,13 @@ body {
 }
 
 #check:checked ~ label #btn {
-    left: 224px;
+    left: 258px;
     opacity: 0;
     pointer-events: none;
 }
 
 #check:checked ~ label #cancel {
-    left: 224px;
+    left: 258px;
     opacity: 1;
     pointer-events: all;
 }
@@ -66,14 +66,14 @@ label #cancel:hover {
 
 label #btn {
     left: 0px;
-    top: 50px;
+    top: 55px;
     padding: 7px 14px 7px 16px;
 }
 
 label #cancel {
     z-index: 1;
     left: 0px;
-    top: 50px;
+    top: 55px;
     padding: 6px 17px 8px 13px;
     opacity: 0;
     pointer-events: none;
@@ -81,8 +81,8 @@ label #cancel {
 
 .sidebar {
     position: fixed;
-    left: -224px;
-    margin-top: 50px;
+    left: -256px;
+    margin-top: 55px;
     transition: all 0.5s;
     z-index: 1;
 }
@@ -92,7 +92,7 @@ label #cancel {
 }
 
 .sidebar li {
-    width: 220px;
+    width: 256px;
     height: 55px;
     display: flex;
     align-items: center;
@@ -135,23 +135,23 @@ header p {
     color: darkgray;
     font-size: 1.6em;
     font-weight: 400;
-    text-indent: 200px;
     margin-top: 150px;
+    text-align: center;
 }
 
 header h1 {
     color: whitesmoke;
     font-size: 3em;
     font-weight: 500;
-    text-indent: 200px;
+    text-align: center;
 }
 
 header h3 {
     color: mediumspringgreen;
     font-size: 1.3em;
     font-weight: 600;
-    text-indent: 200px;
     margin-bottom: 150px;
+    text-align: center;
 }
 
 header sup {
@@ -174,10 +174,10 @@ header sup {
     border-top: 3px solid transparent;
     border-right: 0.5px solid #161616;
     border-left: 0.5px solid #353535;
-    padding: 10px 0px 15px 30px;
-    margin-left: 0px;
+    padding: 13px 0px 18px 0px;
     font-size: 1.1em;
-    text-align: left;
+    text-align: center;
+    text-indent: -8px;
 }
 
 .menu li:hover {
@@ -198,6 +198,14 @@ header sup {
 
 .menu a {
     text-decoration: none;
+}
+
+@media (max-width: 370px) {
+
+    .menu li {
+        font-size: 0.95em;
+    }
+    
 }
 /* --------------------- menu end */
 
@@ -221,11 +229,23 @@ main .about-me {
     border: 3px solid #131923;
 }
 
+@media (max-width: 650px) {
+    main .about-me {
+        width: 90%;
+    }
+}
+
+@media (max-width: 370px) {
+    main .about-me {
+        font-size: 0.95em;
+    }
+}
+
 
 
 /* --------------------- projects-page begin */
 .description {
-    width: 80%;
+    width: 85%;
     font-size: 1em;
     background: #161c28;
     color: darkgray;
@@ -269,7 +289,24 @@ main .about-me {
 form {
     font-size: 1.1em;
     margin: auto;
-    width: 85%;
+    width: 100%;
+}
+
+.contact-form {
+    width: 70%;
+    font-size: 1em;
+    color: darkgray;
+    background: #161c28;
+    margin: 80px auto 0px auto;
+    padding: 50px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8) inset;
+    border: 3px solid #131923;
+}
+
+@media (max-width: 650px) {
+    .contact-form {
+        width: 90%;
+    }
 }
 
 form label,
@@ -312,13 +349,14 @@ form textarea:focus {
 form button {
     font-family: 'Source Code Pro', monospace;
     text-transform: uppercase;
+    font-size: 1.1em;
+    display: block;
+    width: 90%;
     background: #1e2636;
     color: lightskyblue;
     border: none;
     margin: 20px auto 10px;
-    display: block;
-    padding: 15px 100px;
-    font-size: 1.1em;
+    padding: 15px 0px;
     cursor: pointer;
 }
 
