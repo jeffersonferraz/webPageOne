@@ -156,8 +156,24 @@ header h3 {
 
 header sup {
     color: darkgray;
+    font-size: 0.6em;
+    font-weight: 300;
 }
 
+@media (max-width: 540px) {
+
+    header h1 {
+        font-size: 9vw;
+    }
+    
+    header p {
+        font-size: 5vw;
+    }
+
+    header h3 {
+        font-size: 4vw;
+    }
+}
 
 
 /* --------------------- menu begin */
