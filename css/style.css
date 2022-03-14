@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -260,6 +262,21 @@ main .about-me {
 
 
 /* --------------------- projects-page begin */
+
+#description-title {
+    color: darkgray;
+}
+
+#description-title a {
+    text-decoration: none;
+    color: lightskyblue;
+}
+
+#description-title a:hover {
+    color: peru;
+    transition: 0.5s;
+}
+
 .description {
     width: 85%;
     font-size: 1em;
@@ -271,18 +288,8 @@ main .about-me {
     border: 3px solid #131923;
 }
 
-.description a {
-    text-decoration: none;
-    color: lightskyblue;
-}
-
-.description a:hover {
-    color: peru;
-    transition: 0.5s;
-}
-
 .img-scroll {
-    width: 90%;
+    width: 100%;
     height: 240px;
     overflow: auto;
     margin: 40px auto 0px auto;
