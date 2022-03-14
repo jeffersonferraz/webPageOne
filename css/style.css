@@ -67,6 +67,7 @@ label #cancel:hover {
 }
 
 label #btn {
+    z-index: 1;
     left: 0px;
     top: 55px;
     padding: 7px 14px 7px 16px;
@@ -313,6 +314,7 @@ main .about-me {
 
 .img-scroll img {
     width: 100%;
+    filter: opacity(0.6);
 }
 /* --------------------- projects-page end */
 
