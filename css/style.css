@@ -239,7 +239,7 @@ main {
 
 @media (max-width: 650px) {
     main {
-        padding: 0px 6% 120px 6%;
+        padding: 10px 6% 120px 6%;
     }
 }
 
@@ -271,10 +271,12 @@ main .about-me {
 /* --------------------- projects-page begin */
 
 .description-title {
-    padding-top: 100px;
+    text-align: center;
+    margin-top: 100px;
+    padding: 8px;
     color: darkgray;
     font-size: 1.2em;
-    font-weight: 500;
+    font-weight: 400;
     text-indent: 20px;
 }
 
@@ -299,11 +301,19 @@ main .about-me {
     border: 3px solid #131923;
 }
 
+.description hr {
+    margin: 40px auto 0px auto;
+    width: 70%;
+    border: 2px solid gray;
+    border-radius: 5px;
+    opacity: 0.2;
+}
+
 .img-scroll {
     width: 100%;
     height: 300px;
     overflow: auto;
-    margin: 90px auto 0px auto;
+    margin: 60px auto 0px auto;
     border: 0px solid #0D1117;
 }
 
