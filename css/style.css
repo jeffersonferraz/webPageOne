@@ -231,6 +231,7 @@ header sup {
 
 
 main {
+    min-height: 500px;
     max-width: 960px;
     margin: auto;
     padding: 10px 60px 100px 60px;
