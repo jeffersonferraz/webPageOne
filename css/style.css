@@ -418,6 +418,38 @@ form button:focus {
 #thanks {
     font-size: 1.2em;
 }
+
+#menu-thanks ul {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    list-style: none;
+    background: #181818;
+}
+
+#menu-thanks li {
+    background: #2b2b2b;
+    color: lightskyblue;
+    border-top: 3px solid transparent;
+    border-right: 0.5px solid #161616;
+    border-left: 0.5px solid #353535;
+    padding: 13px 0px 18px 0px;
+    font-size: 1.1em;
+    text-align: center;
+    text-indent: -8px;
+}
+
+#menu-thanks li:hover {
+    background: #131922;
+    color: peru;
+    border-top: 3px solid indianred;
+    border-right: 1px solid #131922;
+    border-left: 1px solid #131922;
+}
+
+#menu-thanks a {
+    text-decoration: none;
+}
+
 /* --------------------- thanks-page end */
 
 
